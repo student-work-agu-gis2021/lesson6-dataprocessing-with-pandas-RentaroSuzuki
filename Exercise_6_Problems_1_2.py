@@ -90,13 +90,7 @@ print('Date of the first observation:',first_obs)
 last_obs = None
 
 # YOUR CODE HERE 6
-last_obs = None
-last_obs = 00000000
-for i in range(len(data)):
-  if data['DATE'][i] > last_obs:
-    last_obs = data['DATE'][i]
-
-print(last_obs)
+last_obs=data.iloc[day_count-1,4]
 
 
 
