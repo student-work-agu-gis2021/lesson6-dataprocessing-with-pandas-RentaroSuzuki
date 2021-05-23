@@ -33,7 +33,21 @@ tavg_nodata_count = None
 
 
 #YOUR CODE HERE 2
+tmin_nodata_count = None
 
+for i in range(len(data)):
+  if data['TAVG'][i]=='NaN':
+    tavg_nodata_count+=1
+
+for i in range(len(data)):
+  if data['TMIN'][i]=='NaN':
+    tmin_nodata_count+=1
+
+tavg_nodata_count = data['TAVG'].isna().sum()
+tmin_nodata_count = data['TMIN'].isna().sum()
+
+print(tavg_nodata_count)
+print(tmin_nodata_count)
 
 
 #CAUTION!!! DON'T EDIT THIS PART START
