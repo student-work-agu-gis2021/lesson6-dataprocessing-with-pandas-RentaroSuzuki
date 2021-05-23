@@ -17,6 +17,10 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
+fp="data.txt"
+data=pd.read_csv(fp,delim_whitespace=True,header=0,skiprows=1,na_values=-9999)
+print(data)
+print(data.columns)
 
 # ### Part 2 
 # 
@@ -26,7 +30,10 @@ data = None
 #     - Assign your answer to a variable called `tavg_nodata_count`.
 
 tavg_nodata_count = None
+
+
 #YOUR CODE HERE 2
+
 
 
 #CAUTION!!! DON'T EDIT THIS PART START
@@ -40,6 +47,9 @@ print('Number of no-data values in column "TAVG":',tavg_nodata_count)
 
 tmin_nodata_count = None
 #YOUR CODE HERE 3
+
+
+
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
