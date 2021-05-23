@@ -136,6 +136,9 @@ print('Date of the last observation:', last_obs)
 avg_temp = None
 
 # YOUR CODE HERE 7
+sum_avg_temp = np.sum(data['TAVG'])
+avg_temp = sum_avg_temp / (day_count - tavg_nodata_count)
+print(avg_temp)
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
