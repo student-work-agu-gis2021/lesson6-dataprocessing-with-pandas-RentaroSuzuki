@@ -95,6 +95,13 @@ print("Number of days:", day_count)
 first_obs = None
  
 # YOUR CODE HERE 5
+first_obs = 99999999
+for i in range(len(data)):
+  if data['DATE'][i] < first_obs:
+    first_obs = data['DATE'][i]
+
+print(first_obs)
+
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
