@@ -61,8 +61,11 @@ print('Number of no-data values in column "TAVG":',tavg_nodata_count)
 
 tmin_nodata_count = None
 #YOUR CODE HERE 3
-
-
+for idx, row in data.iterrows():
+  if np.isnan(data['TMIN']):
+    tmin_nodata_count += 1
+  break
+print(tmin_nodata_count)
 
 
 #CAUTION!!! DON'T EDIT THIS PART START
