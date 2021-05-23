@@ -18,8 +18,8 @@ data = None
 
 # YOUR CODE HERE 1
 fp="data/1091402.txt"
-data=pd.read_csv(fp,delim_whitespace=True,header=0,skiprows=[1],na_values=[-9999])
-print(data.hrad())
+data=pd.read_csv(fp,delim_whitespace=True,skiprows=[1],na_values=[-9999])
+print(data.head())
 print(data.tall())
 
 # ### Part 2 
@@ -47,7 +47,7 @@ print('Number of no-data values in column "TAVG":',tavg_nodata_count)
 
 tmin_nodata_count = None
 #YOUR CODE HERE 3
-tmin_nodata_count=data.iloc[:,8].usnull().sum()
+tmin_nodata_count=data.iloc[:,8].isnull().sum()
 
 
 #CAUTION!!! DON'T EDIT THIS PART START
