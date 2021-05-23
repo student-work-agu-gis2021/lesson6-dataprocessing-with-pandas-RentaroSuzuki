@@ -123,6 +123,7 @@ for i in range(len(data)):
 print(last_obs)
 
 
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
 print('Date of the last observation:', last_obs)
